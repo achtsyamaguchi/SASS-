@@ -1,0 +1,5 @@
+@use "../setting" as s;
+
+@mixin color-white {
+  color: s.$color;
+}
