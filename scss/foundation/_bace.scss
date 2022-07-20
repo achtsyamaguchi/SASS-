@@ -1,5 +1,42 @@
-@use "../global" as g;
+@use "../global" as *;
 
-p {
-  @include color;
+
+
+.wrapper {
+  background-color: #0b0a0a;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+    h1 {
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 50px;
+      color: #333;
+      background-color: yellow;
+      margin-bottom: 30px;
+    }
+
+    p {
+      @include color-white;
+      @include line-height-txt;
+      margin-bottom: 30px;
+      display: inline-block;
+      
+
+      strong {
+        color: red;
+      }
+    }
+
+
+    ol {
+      color: #fff;
+      padding-left: 20px;
+
+      li {
+        @include line-height-txt;
+        margin-left: 50px;
+      }
+    }
 }

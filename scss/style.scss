@@ -1,41 +1,4 @@
 @use "foundation";
-@use "../global" as g;
-.wrapper {
-  background-color: #0b0a0a;
-  text-align: center;
-  padding-bottom: 30px;
-
-    h1 {
-      width: fit-content;
-      margin: 0 auto;
-      font-size: 50px;
-      color: #333;
-      background-color: yellow;
-      margin-bottom: 30px;
-    }
-
-    p {
-      @include g.color-white;
-      // color: #fff;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      display: inline-block;
-      text-align: left;
-      
-      strong {
-        color: red;
-      }
-    }
+// @use "../global" as g;
 
 
-    ol {
-      color: #fff;
-      padding-left: 20px;
-
-      li {
-        margin-left: 50px;
-        text-align: left;
-        line-height: 1.5;
-      }
-    }
-}
